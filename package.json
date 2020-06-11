@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/leehome150/mini-wheels-demo/issues"
   },
-  "homepage": "https://github.com/leehome150/mini-wheels-demo#readme"
+  "homepage": "https://github.com/leehome150/mini-wheels-demo#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
