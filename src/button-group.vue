@@ -5,28 +5,45 @@
 </template>
 
 <script>
-  export default {
-  };
+    export default {
+        mounted() {
+            for (let node of this.$el.children) {
+                let name = node.nodeName.toLowerCase()
+                {
+                    if (name !== 'button') {
+                        console.warn(`button-group的子元素应该全是g-button，但是你写的事${name}`)
+                    }
+                }
+            }
+        }
+    };
 </script>
 
 <style lang="scss" scoped>
 
-    .button-group{
+    .button-group {
         display: inline-flex;
         vertical-align: middle;
-        >.bt{
-            border-radius:0;
-            margin-left: -1px;
-            &:first-child{
+
+        > .bt {
+            border-radius: 0;
+
+            &:not(:first-child) {
+                margin-left: -1px;
+            }
+
+            &:first-child {
                 border-top-left-radius: 4px;
                 border-bottom-left-radius: 4px;
             }
-            &:last-child{
+
+            &:last-child {
                 border-top-right-radius: 4px;
                 border-bottom-right-radius: 4px;
             }
-            &:hover{
-                position:relative;
+
+            &:hover {
+                position: relative;
                 z-index: 1;
             }
         }
