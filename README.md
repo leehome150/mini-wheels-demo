@@ -30,11 +30,19 @@
             }
     ```
     IE 15及以上浏览器都支持此样式。
-2. 安装 mini-wheels 
+2. 安装 miniwheels-demo 
     ```
-    npm i --save mini-wheels
+    npm i --save miniwheels-demo
     ```   
-3. 引入 mini-wheels
+3. 引入 miniwheels-demo
+    ```
+    import { ButtonGroup, Button, Icon } from "miniwheels-demo";
+    
+    export default {
+      components: {
+        "g-button": Button,
+      },
+    ```
 ## 文档
 
 ## 提问
