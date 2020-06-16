@@ -32,10 +32,24 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .box {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 
 <div id="app">
+    <div class="box">
+        <g-input value="leehome" disabled></g-input>
+        <g-input value="jay" readonly></g-input>
+        <g-input value="eason"></g-input>
+    </div>
+    <div class="box">
+        <g-input value="jj" error="姓名不能少于3个字符"></g-input>
+    </div>
+    <div class="box">
     <g-button :loading="loading1" @click="loading1=!loading1">
         按钮
     </g-button>
@@ -50,7 +64,7 @@
         <g-button>更多</g-button>
         <g-button icon="right" icon-position="right">下一页</g-button>
     </button-group>
-    <div id="test"></div>
+</div>
 </div>
 <script src="./src/app.js/"></script>
 </body>
