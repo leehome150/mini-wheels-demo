@@ -10,19 +10,23 @@ import Content from './content'
 import Footer from './footer'
 import Header from './header'
 import Aside from './sider'
+import Toast from './toast'
+import plugin from './plugin'
 
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
 Vue.component('button-group', ButtonGroup)
-Vue.component('g-input',Input)
-Vue.component('g-row',Row)
-Vue.component('g-col',Col)
-Vue.component('g-layout',Layout)
-Vue.component('g-content',Content)
-Vue.component('g-footer',Footer)
-Vue.component('g-header',Header)
-Vue.component('g-sider',Aside)
+Vue.component('g-input', Input)
+Vue.component('g-row', Row)
+Vue.component('g-col', Col)
+Vue.component('g-layout', Layout)
+Vue.component('g-content', Content)
+Vue.component('g-footer', Footer)
+Vue.component('g-header', Header)
+Vue.component('g-sider', Aside)
+Vue.component('g-toast', Toast)
+Vue.use(plugin)
 
 
 new Vue({
@@ -31,12 +35,16 @@ new Vue({
         loading1: false,
         loading2: true,
         loading3: false,
-        message:'eason'
+        message: 'eason'
     },
-    methods:{
-        inputChange(e){
-            console.log(e.target.value)
+    created() {
+
+    },
+    methods: {
+        showToast() {
+            this.$toast('我是toast')
         }
     }
+
 })
 
