@@ -16,7 +16,6 @@
         components: {
             'g-icon': Icon
         },
-        // props: ['icon', 'iconPosition']
         props: {
             icon: {},
             loading: {
@@ -35,6 +34,14 @@
 </script>
 
 <style lang="scss" scoped>
+    $button-height: 32px;
+    $font-size: 14px;
+    $button-bg: white;
+    $button-active-bg: #eee;
+    $button-radius: 4px;
+    $color: #333;
+    $border-color: #999;
+    $border-color-hover: #666;
     @keyframes spin {
         0% {
             transform: rotate(0deg);
@@ -45,12 +52,12 @@
     }
 
     .bt {
-        font-size: var(--font-size);
-        height: var(--button-height);
+        font-size: $font-size;
+        height: $button-height;
         padding: 0 1em;
-        border-radius: var(--button-radius);
-        border: 1px solid var(--border-color);
-        background: var(--button-bg);
+        border-radius:$button-radius;
+        border: 1px solid $border-color;
+        background: $button-bg;
         vertical-align: top;
         display: inline-flex;
         justify-content: center;
@@ -70,11 +77,11 @@
         }
 
         &:hover {
-            border-color: var(--border-color-hover);
+            border-color: $border-color-hover;
         }
 
         &:active {
-            background-color: var(--button-active-bg);
+            background-color: $button-active-bg;
         }
 
         &:focus {

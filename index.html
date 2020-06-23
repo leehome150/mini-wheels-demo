@@ -13,20 +13,8 @@
             box-sizing: border-box;
         }
 
-        html {
-            --button-height: 32px;
-            --font-size: 14px;
-            --button-bg: white;
-            --button-active-bg: #eee;
-            --button-radius: 4px;
-            --color: #333;
-            --border-color: #999;
-            --border-color-hover: #666;
-        }
-
-
         body {
-            font-size: var(--font-size);
+            font-size: 14px
         }
     </style>
     <style>
@@ -36,7 +24,7 @@
 <body>
 
 <div id="app">
-<button @click="showToast">点我</button>
+    <button @click="showToast">点我</button>
 </div>
 <script src="./src/app.js/"></script>
 </body>
