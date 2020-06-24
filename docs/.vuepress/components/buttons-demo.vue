@@ -1,9 +1,9 @@
 <template>
     <div>
         <g-button>默认按钮</g-button>
-        <g-button icon="setting">默认按钮</g-button>
-        <g-button :loading=true>默认按钮</g-button>
-        <g-button disabled>默认按钮</g-button>
+        <g-button icon="setting">设置按钮</g-button>
+        <g-button :loading=true>点击加载</g-button>
+        <g-button disabled>不可点击</g-button>
         <g-button-group>
             <g-button icon="left">上一页</g-button>
             <g-button>更多</g-button>

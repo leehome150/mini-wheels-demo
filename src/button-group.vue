@@ -29,7 +29,8 @@
             border-radius: 0;
 
             &:not(:first-child) {
-                margin-left: -1px;
+
+                margin-left: -2px;
             }
 
             &:first-child {

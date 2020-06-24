@@ -1,7 +1,8 @@
 <template>
-    <div class="col" :class="colClass"
-         :style="colStyle">
-        <slot></slot>
+    <div class="col" :class="colClass" :style="colStyle">
+        <div class="inside">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -89,17 +90,26 @@
 
 <style lang="scss" scoped>
     .col:nth-child(odd) {
-        background: #40ADFF;
+        > .inside {
+            background: #40ADFF;
+        }
+
     }
 
-    .col:nth-child(even) {
+    .col:nth-child(even) > .inside {
         background: #0092FF;
     }
+
     .col {
-        color:white;
         padding: 8px 0;
-        margin-bottom:8px ;
+        margin-bottom: 8px;
         text-align: center;
+
+        > .inside {
+            padding: 8px 0;
+            color: white;
+        }
+
         $class-prefix: col-;
         @for $n from 1 through 24 {
 

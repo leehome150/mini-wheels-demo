@@ -3,18 +3,17 @@ title: input
 ---
 # input-输入
 
+通过鼠标或键盘输入内容，是最基础的表单域的包装。
+
 #### 使用方法
 
 <br>
 
 
 <ClientOnly>
-<input-demo></input-demo>
+<input-demo5></input-demo5>
 </ClientOnly>
 
 ```html
-<g-input value="leehome"></g-input>
-<g-input readonly value="jay"></g-input>
-<g-input disabled value="eason"></g-input>
-<g-input value="jj" error="不能少于两个字符"></g-input>
+
 ```
