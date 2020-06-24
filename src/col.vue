@@ -88,13 +88,23 @@
 </script>
 
 <style lang="scss" scoped>
-    .col {
-        $class-prefix: col-;
+    .col:nth-child(odd) {
+        background: #40ADFF;
+    }
 
+    .col:nth-child(even) {
+        background: #0092FF;
+    }
+    .col {
+        color:white;
+        padding: 8px 0;
+        margin-bottom:8px ;
+        text-align: center;
+        $class-prefix: col-;
         @for $n from 1 through 24 {
 
             &.#{$class-prefix}#{$n} {
-                width: ($n/24)*100%
+                width: ($n/24)*100%;
 
             }
         }

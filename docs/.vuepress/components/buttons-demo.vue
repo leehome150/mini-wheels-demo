@@ -4,26 +4,21 @@
         <g-button icon="setting">默认按钮</g-button>
         <g-button :loading=true>默认按钮</g-button>
         <g-button disabled>默认按钮</g-button>
-
-        <pre><code>{{content}}</code></pre>
-
+        <g-button-group>
+            <g-button icon="left">上一页</g-button>
+            <g-button>更多</g-button>
+            <g-button icon="right">下一页</g-button>
+        </g-button-group>
     </div>
 </template>
 <script>
     import Button from "../../../src/button"
+    import ButtonGroup from '../../../src/button-group'
 
     export default {
-        data() {
-            return {
-                content: `
-                    <g-button>默认按钮</g-button>
-                    <g-button icon="setting">默认按钮</g-button>
-                    <g-button :loading=true>默认按钮</g-button>
-                    <g-button disabled>默认按钮</g-button>`.replace(/\t+| +/g,'').trim()
-            }
-        },
         components: {
-            'g-button': Button
+            'g-button': Button,
+            'g-button-group':ButtonGroup
         }
     }
 </script>

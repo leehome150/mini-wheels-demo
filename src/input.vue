@@ -38,7 +38,7 @@
 <style lang="scss" scoped>
     $height: 32px;
     $border-color: #999;
-    $border-color-hover: #666;
+    $border-color-hover: #333;
     $border-radius: 4px;
     $font-size: 12px;
     $box-shadow-color: rgba(0, 0, 0, 0.5);
@@ -62,9 +62,9 @@
             padding: 0 8px;
             font-size: inherit;
 
+            &:last-child {
+                margin-bottom: 8px;
 
-            &:hover {
-                border-color: $border-color-hover;
             }
 
             &:focus {
