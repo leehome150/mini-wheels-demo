@@ -1,20 +1,20 @@
 <template>
     <div>
-        <g-row>
-            <g-col span="12">col-12</g-col>
-            <g-col span="12">col-12</g-col>
-        </g-row>
-        <g-row>
-            <g-col span="8">col-8</g-col>
-            <g-col span="8">col-8</g-col>
-            <g-col span="8">col-8</g-col>
-        </g-row>
-        <g-row>
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-        </g-row>
+        <m-row>
+            <m-col span="12">col-12</m-col>
+            <m-col span="12">col-12</m-col>
+        </m-row>
+        <m-row>
+            <m-col span="8">col-8</m-col>
+            <m-col span="8">col-8</m-col>
+            <m-col span="8">col-8</m-col>
+        </m-row>
+        <m-row>
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+        </m-row>
     </div>
 </template>
 <script>
@@ -23,8 +23,8 @@
 
     export default {
         components: {
-            'g-row': Row,
-            'g-col': Col
+            'm-row': Row,
+            'm-col': Col
         }
     }
 </script>

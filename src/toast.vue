@@ -23,7 +23,7 @@
             },
             autoCloseDelay: {
                 type: Number,
-                default: 50
+                default: 5
             },
             closeButton: {
                 type: Object,
@@ -99,6 +99,7 @@
             transform: translateY(0);
         }
     }
+
     @keyframes slide-down {
         0% {
             opacity: 0;
@@ -109,6 +110,7 @@
             transform: translateY(0);
         }
     }
+
     @keyframes fade-in {
         0% {
             opacity: 0;
@@ -127,11 +129,14 @@
         &.position-top {
             top: 0;
             transform: translateX(-50%);
+            z-index: 21;
 
-            > .toast {
+            > .toast  {
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
                 animation: slide-down .3s;
+
+
             }
         }
 

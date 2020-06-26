@@ -1,8 +1,7 @@
 <template>
     <transition name="fade">
-        <div class="sider" v-if="visible">
+        <div class="sider">
             <slot></slot>
-            <button @click="visible=false">X</button>
         </div>
     </transition>
 </template>
@@ -10,25 +9,16 @@
 <script lang="ts">
   export default {
     name: 'sider',
-    data() {
-      return {
-        visible: true
-      };
-    }
   };
 </script>
 
 <style lang="scss" scoped>
     .sider {
         background: #3BA0E9;
-        width: 200px;
-        position: relative;
+        line-height: 120px;
+        min-width: 200px;
+        text-align: center;
 
-        > button {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
     }
     .fade-enter-active, .fade-leave-active {
         transition: all .5s;

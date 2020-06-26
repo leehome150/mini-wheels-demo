@@ -12,6 +12,8 @@
 <style lang="scss" scoped>
 .footer{
     background: #7DBCEA;
-    height:100px;
+    height:69px;
+    line-height: 69px;
+    text-align: center;
 }
 </style>

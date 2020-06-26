@@ -12,6 +12,8 @@
 <style lang="scss" scoped>
 .header{
     background: #7DBCEA;
-    height:100px;
+    height:64px;
+    line-height: 64px;
+    text-align: center;
 }
 </style>

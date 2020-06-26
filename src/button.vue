@@ -1,7 +1,7 @@
 <template>
     <button class="bt" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
-        <g-icon class="icon" v-if="icon&&!loading" :name="icon"></g-icon>
-        <g-icon class="icon loading" name="loading" v-if="loading"></g-icon>
+        <m-icon class="icon" v-if="icon&&!loading" :name="icon"></m-icon>
+        <m-icon class="icon loading" name="loading" v-if="loading"></m-icon>
         <div class="content">
             <slot/>
         </div>
@@ -13,14 +13,15 @@
     import Icon from './icon'
 
     export default {
+
         components: {
-            'g-icon': Icon
+            'm-icon': Icon
         },
         props: {
             icon: {},
             loading: {
-                type: Boolean,
                 default: false,
+                type: Boolean,
             },
             iconPosition: {
                 type: String,
@@ -55,7 +56,7 @@
         font-size: $font-size;
         height: $button-height;
         padding: 0 1em;
-        border-radius:$button-radius;
+        border-radius: $button-radius;
         border: 1px solid $border-color;
         background: $button-bg;
         vertical-align: top;

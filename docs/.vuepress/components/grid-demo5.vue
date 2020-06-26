@@ -1,15 +1,15 @@
 <template>
     <div>
-        <g-row gutter="20">
-            <g-col span='24' :ipad="{span:'12'
+        <m-row gutter="20">
+            <m-col span='24' :ipad="{span:'12'
             }" :narrow-pc="{span:'8'}" :pc="{span:'4'}" :wide-pc="{span:'2'}">
                 col
-            </g-col>
-            <g-col span='0' :ipad="{span:'12'
+            </m-col>
+            <m-col span='0' :ipad="{span:'12'
             }" :narrow-pc="{span:'16'}" :pc="{span:'20'}" :wide-pc="{span:'22'}">
                 col
-            </g-col>
-        </g-row>
+            </m-col>
+        </m-row>
     </div>
 </template>
 <script>
@@ -18,8 +18,8 @@
 
     export default {
         components: {
-            'g-row': Row,
-            'g-col': Col
+            'm-row': Row,
+            'm-col': Col
         }
     }
 </script>

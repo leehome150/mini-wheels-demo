@@ -14,18 +14,18 @@ import Toast from './toast'
 import plugin from './plugin'
 
 
-Vue.component('g-button', Button)
-Vue.component('g-icon', Icon)
-Vue.component('button-group', ButtonGroup)
-Vue.component('g-input', Input)
-Vue.component('g-row', Row)
-Vue.component('g-col', Col)
-Vue.component('g-layout', Layout)
-Vue.component('g-content', Content)
-Vue.component('g-footer', Footer)
-Vue.component('g-header', Header)
-Vue.component('g-sider', Aside)
-Vue.component('g-toast', Toast)
+Vue.component('m-button', Button)
+Vue.component('m-icon', Icon)
+Vue.component('m-button-group', ButtonGroup)
+Vue.component('m-input', Input)
+Vue.component('m-row', Row)
+Vue.component('m-col', Col)
+Vue.component('m-layout', Layout)
+Vue.component('m-content', Content)
+Vue.component('m-footer', Footer)
+Vue.component('m-header', Header)
+Vue.component('m-sider', Aside)
+Vue.component('m-toast', Toast)
 Vue.use(plugin)
 
 
@@ -42,14 +42,14 @@ new Vue({
     },
     methods: {
         showToast() {
-            this.$toast('我是toast', {
+            this.$toast('弹出内容', {
                 closeButton: {
                     text: '关闭',
                     callback: () => {
                     }
                 },
                 enableHtml: false,
-                position: 'middle'
+                position: 'top'
             })
         }
     }

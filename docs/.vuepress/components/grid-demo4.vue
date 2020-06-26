@@ -1,17 +1,17 @@
 <template>
     <div>
-        <g-row align="left">
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-        </g-row>
-        <g-row align="right">
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-        </g-row>
-        <g-row align="center">
-            <g-col span="6">col-6</g-col>
-            <g-col span="6">col-6</g-col>
-        </g-row>
+        <m-row align="left">
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+        </m-row>
+        <m-row align="right">
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+        </m-row>
+        <m-row align="center">
+            <m-col span="6">col-6</m-col>
+            <m-col span="6">col-6</m-col>
+        </m-row>
     </div>
 </template>
 <script>
@@ -20,8 +20,8 @@
 
     export default {
         components: {
-            'g-row': Row,
-            'g-col': Col
+            'm-row': Row,
+            'm-col': Col
         }
     }
 </script>

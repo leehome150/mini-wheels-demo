@@ -1,10 +1,8 @@
 <template>
     <div>
-        <m-input value="leehome"></m-input>
-        <m-input readonly value="jay"></m-input>
-        <m-input disabled value="eason"></m-input>
-        <m-input value="jj" error="不能少于两个字符"></m-input>
-
+        <m-input v-model.value="message"></m-input>
+        <br/>
+        {{message}}
     </div>
 </template>
 <script>
@@ -14,6 +12,12 @@
 
     Vue.component('m-icon', Icon)
     export default {
+        data() {
+            return {
+                message: "support"
+            }
+
+        },
         components: {
             'm-input': Input,
         }
