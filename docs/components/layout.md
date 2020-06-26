@@ -15,6 +15,8 @@ title: layout-布局
 <layout-demo1></layout-demo1>
 </ClientOnly>
 
+代码
+
 ```html
 <m-layout>
     <m-header>header</m-header>
@@ -25,6 +27,8 @@ title: layout-布局
 <br>
 
 #### 常见布局2
+预览
+<br>
 
 <ClientOnly>
 <layout-demo2></layout-demo2>

@@ -16,34 +16,61 @@
     }
     ```
     IE 8及以上浏览器都支持此样式。
-    你还需要设置默认颜色等变量（后续会改为SCSS变量）
-    ```
-     html {
-                --button-height: 32px;
-                --font-size: 14px;
-                --button-bg: white;
-                --button-active-bg: #eee;
-                --button-radius: 4px;
-                --color: #333;
-                --border-color: #999;
-                --border-color-hover: #666;
-            }
-    ```
-    IE 15及以上浏览器都支持此样式。
+   
 2. 安装 miniwheels-demo 
-    ```
-    npm i --save miniwheels-demo
-    ```   
-3. 引入 miniwheels-demo
-    ```
-    import { ButtonGroup, Button, Icon } from "miniwheels-demo";
+    ```sh
+    npm i --save miniwheels-demo 
     
+    # or
+    
+    yarn add miniwheels-demo
+    ``` 
+3. 引入 miniwheels-demo
+     JS(全局)引用
+    
+    ```js
+    import Vue from "vue"
+    import {Button,ButtonGroup,Row,Col,Header,Footer,Content,Sider,Layout,Icon,Input,Toast,plugin} from 'miniwheels-demo'
+    Vue.component('m-button', Button)
+    Vue.component('m-icon', Icon)
+    Vue.component('m-button-group', ButtonGroup)
+    Vue.component('m-input', Input)
+    Vue.component('m-row', Row)
+    Vue.component('m-col', Col)
+    Vue.component('m-layout', Layout)
+    Vue.component('m-header', Header)
+    Vue.component('m-footer', Footer)
+    Vue.component('m-sider', Sider)
+    Vue.component('m-content', Content)
+    Vue.component('m-toast', Toast)
+    Vue.use(plugin)
+    ```
+    
+     模块化引用
+    
+    ```js
+    import Vue from "vue"
+    import {Button,ButtonGroup,Row,Col,Header,Footer,Content,Sider,Layout,Icon,Input,Toast,plugin} from 'miniwheels-demo'
+    Vue.use(plugin)
     export default {
-      components: {
-        "g-button": Button,
-      },
+        components: {'m-button-group': ButtonGroup,
+            'm-button': Button,
+            'm-icon': Icon,
+            'm-input': Input,
+            'm-row': Row,
+            'm-col': Col,
+            'm-layout': Layout,
+            'm-header': Header,
+            'm-content': Content,
+            'm-sider': Sider,
+            'm-footer': Footer,
+            'm-toast': Toast,
+        }
+    }
     ```
 ## 文档
+
+具体文档可参考[VuePress官方文档](https://vuepress.vuejs.org/zh/)
 
 ## 提问
 
