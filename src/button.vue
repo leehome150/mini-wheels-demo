@@ -2,7 +2,7 @@
     <button class="bt" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
         <m-icon class="icon" v-if="icon&&!loading" :name="icon"></m-icon>
         <m-icon class="icon loading" name="loading" v-if="loading"></m-icon>
-        <div class="content">
+        <div class="content2">
             <slot/>
         </div>
 
@@ -73,7 +73,7 @@
             margin-right: .1em;
         }
 
-        > .content {
+        > .content2 {
             order: 2;
         }
 

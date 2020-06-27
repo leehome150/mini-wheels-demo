@@ -13,20 +13,20 @@
 </template>
 <script>
 
-    import header from "../../../src/header"
-    import content from "../../../src/content"
-    import sider from "../../../src/sider"
-    import footer from "../../../src/footer"
-    import layout from "../../../src/layout"
+    import Header from "../../../src/header"
+    import Content from "../../../src/content"
+    import Sider from "../../../src/sider"
+    import Footer from "../../../src/footer"
+    import Layout from "../../../src/layout"
 
 
     export default {
         components: {
-            'm-header': header,
-            'm-content': content,
-            'm-sider': sider,
-            'm-footer': footer,
-            'm-layout': layout
+            'm-header': Header,
+            'm-content': Content,
+            'm-sider': Sider,
+            'm-footer': Footer,
+            'm-layout': Layout
         }
     }
 </script>

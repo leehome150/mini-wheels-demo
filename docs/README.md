@@ -16,4 +16,4 @@ actionLink: /install/
 
 <hr>
 
-MiniWheels UI是一个好用的UI框架，目前提供了Button、Input、Grid、Layout、Toast组件（后面还会持续更新一些好用的），适合移动端和PC端使用。   
+MiniWheels UI是一个好用的UI框架，目前提供了Button、Input、Grid、Layout、Toast组件（后面还会持续更新一些好用的UI），适合移动端和PC端使用。   
