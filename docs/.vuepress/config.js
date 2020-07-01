@@ -1,5 +1,5 @@
 module.exports = {
-    base: "/MiniWheels-website/",
+    base: "/miniwheels-website/",
     title: 'MiniWheels UI',
     description: '一个好用的UI框架',
     theme: 'reco',

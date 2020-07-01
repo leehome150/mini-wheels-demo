@@ -1,14 +1,12 @@
 ---
 home: true
-heroImage: /home-page.jpg
+heroImage: /logo2.png
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
   margin: '6rem auto 1.5rem',
-  borderRadius: '50%',
-  boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
-heroText: MiniWheels UI 官网
+heroText: MiniWheels UI 
 tagline: 一个基于Vue实现的简单好用的UI框架
 actionText: 快速上手 →
 actionLink: /install/
